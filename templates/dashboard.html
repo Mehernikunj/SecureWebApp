@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <div class="dashboard-container">
+
+        <h1>Welcome, {{ username }}!</h1>
+        
+        <p>This is your secure, private dashboard. You are successfully logged in.</p>
+        <p>This page is protected and can only be accessed when you have a valid session.</p>
+        <br>
+        <a href="/logout">Log Out</a>
+    </div>
+
+</body>
+</html>
